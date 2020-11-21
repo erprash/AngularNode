@@ -29,7 +29,7 @@ export class TodoService {
   }
 
   deleteTodo(id): Observable<any> {
-    let postUrl = '/deleteProduct/';
+    const postUrl = '/deleteProduct/';
     return this.http.delete<any>(this.baseUrl + postUrl + id)
     .pipe(
       tap(
