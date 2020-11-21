@@ -7,7 +7,7 @@ const routes: Routes = [];
   imports: [ RouterModule.forRoot(routes) ],
   exports: [ RouterModule ],
   providers: []
- 
+
 })
 export class AppRoutingModule {}
 
