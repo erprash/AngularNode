@@ -18,9 +18,9 @@ describe('TodoService', () => {
         })
         .compileComponents();
 
-        httpClient = TestBed.get(HttpClient);
-        httpTestingController = TestBed.get(HttpTestingController);
-        todoService = TestBed.get(TodoService);
+        httpClient = TestBed.inject(HttpClient);
+        httpTestingController = TestBed.inject(HttpTestingController);
+        todoService = TestBed.inject(TodoService);
       });
 
       afterEach(() => {
@@ -54,9 +54,9 @@ describe('TodoService', () => {
       })
       .compileComponents();
 
-      httpClient = TestBed.get(HttpClient);
-      httpTestingController = TestBed.get(HttpTestingController);
-      todoService = TestBed.get(TodoService);
+      httpClient = TestBed.inject(HttpClient);
+      httpTestingController = TestBed.inject(HttpTestingController);
+      todoService = TestBed.inject(TodoService);
     });
 
     afterEach(() => {
